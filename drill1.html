@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drill 1</title>
+    <style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    margin: 0;
+    }
+    .container {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10vh;
+    padding: 2rem 4rem;
+    font-size: 1.5rem;
+    font-family: "Helvetica";
+    color: #333;
+    min-width: 200px;
+    text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Given the numbers 1, 2, and 3...</h1>
+            <div class="numberzone" id="numberzone">
+
+            </div>
+        </div>
+    </div>
+<script>
+    let add, sub, div, mul;
+    let num = ["1", "2", "3"];
+    
+        add = +num[0] + +num[1] + +num[2];
+        sub = +num[0] - +num[1] - +num[2];
+        div = +num[0] / +num[1] / +num[2];
+        mul = +num[0] * +num[1] * +num[2];
+    document.getElementById("numberzone").innerHTML = 
+    "<h2>Addition: </h2>" + "1 + 2 + 3 = " + add +
+    "<h2>Subtruction: </h2>" + "1 - 2 - 3 = " + sub +
+    "<h2>Divaison: </h2>" + "1 / 2 / 3 = " + div +
+    "<h2>Mol tee plah koy shin: </h2>" + "1 * 2 * 3 = " + mul;
+
+
+
+
+
+</script>
+</body>
+</html>
